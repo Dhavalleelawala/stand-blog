@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STAND BLOG.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/roboto/stylesheet.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/media.css" type="text/css" />
+  </head>
+  <body>
+    <!-- header section start  -->
+    <header>
+      <div class="container">
+        <div class="navbar d-flex justify-content-between align-items-center">
+          <a href="" class="logo"
+            ><h1>STAND BLOG<span>.</span></h1></a
+          >
+          <nav>
+            <ul class="d-flex">
+              <li><a href="javascript:void(0)">HOME</a></li>
+              <li><a href="javascript:void(0)">ABOUT US</a></li>
+              <li><a href="javascript:void(0)">BLOG ENTRIES</a></li>
+              <li><a href="javascript:void(0)">POST DETAILS</a></li>
+              <li><a href="javascript:void(0)">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header section End  -->
+
+    <main>
+      <!-- hero section start  -->
+      <section class="hero">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/slide1.jpeg" alt="slide1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide2.jpg" alt="slide2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide3.jpg" alt="slide3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide4.jpg" alt="slide4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide5.jpg" alt="slide5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide6.webp" alt="slide6" />
+              </div>
+            </div>
+            <div
+              class="swiper-button-next"
+              style="padding: 20px; background-color: #ffffff85; margin: 0 15px"
+            ></div>
+            <div
+              class="swiper-button-prev"
+              style="padding: 20px; background-color: #ffffff85; margin: 0 15px"
+            ></div>
+            <div
+              class="swiper-pagination"
+              style="padding: 1rem 0; background-color: #ffffff85"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end  -->
+      <!-- template section start  -->
+      <section class="template">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="template-content py-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="template-title">
+                  <h3>Stand Blog HTML5 Template</h3>
+                  <h5>Create HTML Templates for Bloggers!</h5>
+                </div>
+                <button>DOWNLOAD NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- template section end  -->
+      <section class="blog">
+        <div class="container">
+          <div class="col-9">
+            <div class="card">
+            <img src="./img/blog1.jpg" height="450px" class="card-img" alt="" />
+            <div class="card-body">
+              <div class="card-header">
+                <h3>LIFESTYLE</h3>
+                <h4>Best Template Website For HTML CSS</h4>
+                <span>Admin</span>
+                <span>May 31, 2020</span>
+                <span>12 Comments</span>
+              </div>
+              <div class="card-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint temporibus minima corporis? At excepturi nihil voluptate assumenda? Aspernatur praesentium voluptate odio corrupti cumque blanditiis quia, a consequuntur recusandae amet.</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="tags">
+                <i class="fa-solid fa-tag"></i>
+                Beauty, Nature
+              </div>
+              <div class="">
+                <i class="fa-solid fa-share-nodes"></i>
+                <a href="javascript:void(0)">Facebook</a>, 
+                <a href="javascript:void(0)">Twitter</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        slidesPerView: 3,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
